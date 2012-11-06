@@ -1,16 +1,16 @@
-### The problem with distrubuted social networks
+### The problem with distributed social networks
 
 Recently the news on the internet has been that the government admits you don't own your [cloud data](https://www.eff.org/deeplinks/2012/10/governments-attack-cloud-computing).   Besides this scary totalitarian notion it seems absurd that a company such as Facebook will forever run the social lives of the entire world.
 
 Luckily many people have already realized this and have started working on decentralized approaches, you can find a full list on [wikipedia](http://en.wikipedia.org/wiki/Distributed_social_network).
 
-The definition of a distrubuted social network taken from wikipedia is
+The definition of a distributed social network taken from wikipedia is
 
 > A distributed social network is an Internet social network service that is decentralized and distributed across different providers. 
 
-#### The problem is distributing a distrubuted social network
+#### The problem is distributing a distributed social network
 
-Recently there was a HackerNews [submission](http://news.ycombinator.com/item?id=4418904) talking about [tent.io](tent.io)(one of the listed DSN's).
+Recently there was a HackerNews [submission](http://news.ycombinator.com/item?id=4418904) talking about [tent.io](tent.io)(one of the listed DSNs).
 
 One of the highest rated comments stated
 
@@ -24,9 +24,9 @@ and
 
 > Not only is email a successful decentralised system, it's the logical infrastructure for a decentralised social network. In Facebook terms, your "feed" is just an inbox with a smart filter and nice presentation, and your "wall" is just a mailing list to which all of your friends are subscribed.
 
-#### Current distrubution techniques
+#### Current distribution techniques
 
-[Tent.io](https://tent.io/about) is my favorite approach so far. Starting with a rock solid protocol they have started building server implementations using Ruby. But the first few comments of their about page alude to the problem of distrubution to non tech saavy users.
+[Tent.io](https://tent.io/about) is my favorite approach so far. Starting with a rock solid protocol they have started building server implementations using Ruby. But the first few comments of their about page alude to the problem of distribution to non tech saavy users.
 
 > Tent allows every user to run their own server, but like email and the web, most users will use a hosting service to handle it.
   Users who want to run their own server should look at tentd, the current reference server implementation.
@@ -34,7 +34,7 @@ and
 
 This is ideally all that should be required, but understandably does not seem like the impetus that such a bold movement needs.
 
-#### Using browser extensions for distrubution
+#### Using browser extensions for distribution
 
 The browser has shown to become a powerful player in app distribution with the Chrome webstore, Firefox Addons and the App Store.
 
@@ -64,6 +64,6 @@ The links below are people who have succesfully run node.js inside of the browse
 
 #### Conclusion
 
-I hope to see current attempts such as tent.io port their servers to node.js.   At this point, there is no reason why you couldn't bundle the server inside an easy to install extension.   I would definitely then try out a distrubuted social network.
+I hope to see current attempts such as tent.io port their servers to node.js.   At this point, there is no reason why you couldn't bundle the server inside an easy to install extension.   I would definitely then try out a distributed social network.
 
 Look forward to hearing from those interested!
