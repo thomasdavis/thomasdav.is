@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"> <![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+<head>
+
+  <!-- Basic Page Needs
+  ================================================== -->
+  <meta charset="utf-8">
+  <title>Thomas Davis - Front end web developer</title>
+  <meta name="description" content="Thomas Davis is a front end web developer from Brisbane, Australia.   Works heavily in Javascript and CSS/HTML.">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  ================================================== -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- CSS
+  ================================================== -->
+  <link rel="stylesheet" href="../stylesheets/base.css">
+  <link rel="stylesheet" href="../stylesheets/skeleton.css">
+  <link rel="stylesheet" href="../stylesheets/layout.css">
+
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
+  <!-- Favicons
+  ================================================== -->
+  <link rel="shortcut icon" href="../favicon.ico">
+
+</head>
+<body>
+
+
+
+  <!-- Primary Page Layout
+  ================================================== -->
+
+  <!-- Delete everything in this .container and get started on your own site! -->
+
+  <div class="container">
+      <h1 class="remove-bottom" style="margin-top: 40px"><a style="text-decoration: none;" href="http://thomasdav.is">Thomas Davis</a></h1>
+      <h5>thomasalwyndavis@gmail.com</h5>
+      <hr />
+      <div class="four columns ">
+      <h3>About</h3>
+      <p><img src="http://www.gravatar.com/avatar/cff733cf90823edd218a834980379c61.jpg" style="float:left; margin-right: 15px; padding:2px; border: 1px solid #ddd;" />Hey guys, I've been developing on the web for ~10 years.   I have delved into many areas but of recent decided on focusing on front end web development. I'm currently<strong> for hire</strong> and living in Brisbane, Australia
+      </p>
+      <p>I work heavily with</p>
+      <ul class="square">
+        <li>Javascript</li>
+        <li>RESTful API's</li>
+        <li>CSS/HTML</li>
+      </ul>
+      <p>Also check out my full <a href="https://docs.google.com/document/pub?id=1UBNEBABOoDHeSgHUny48rPjqdFp_Ko39Cue9EXtcDS8">resume</a> or get in contact on</p>
+      <ul class="square">
+        <li><a href="http://twitter.com/neutralthoughts">Twitter</a></li>
+        <li><a href="http://thomasdavis.github.com">Github</a></li>
+      </ul>
+    </div>
+
+    <div class="eleven offset-by-one omega columns">
+      <h3>The problem with distrubuted social networks</h3>
+<p>Recently the news on the internet has been that the government admits you don&#39;t own your <a href="https://www.eff.org/deeplinks/2012/10/governments-attack-cloud-computing">cloud data</a>.   Besides this scary totalitarian notion it seems absurd that a company such as Facebook will forever run the social lives of the entire world.
+
+</p>
+<p>Luckily many people have already realized this and have started working on decentralized approaches, you can find a full list on <a href="http://en.wikipedia.org/wiki/Distributed_social_network">wikipedia</a>.
+
+</p>
+<p>The definition of a distrubuted social network taken from wikipedia is
+
+</p>
+<blockquote>
+<p>A distributed social network is an Internet social network service that is decentralized and distributed across different providers. 
+
+</p>
+</blockquote>
+<h4>The problem is distributing a distrubuted social network</h4>
+<p>Recently there was a HackerNews <a href="http://news.ycombinator.com/item?id=4418904">submission</a> talking about <a href="tent.io">tent.io</a>(one of the listed DSN&#39;s).
+
+</p>
+<p>One of the highest rated comments stated
+
+</p>
+<blockquote>
+<p>Decentralizing things like this is never ever going to work. In terms of running it... my mom/sister/dad/cousin are not going to host this themselves. They might depend on me to do it, but even I&#39;m not going to run a decentralized social network myself. There&#39;s too much liability involved. Not to mention, it&#39;s a pain in the ass.
+
+</p>
+</blockquote>
+<p>Which was refuted by a few comments 
+
+</p>
+<blockquote>
+<p>You say decentralized services never work, and then give an example of the most successful one: email.   I don&#39;t know why you are assuming that everyone will have to run their own. Also, it seems very cynical/naive to think that just because such systems aren&#39;t currently working/won&#39;t currently work with given social structures, that this will always be the case. Do you disagree?
+
+</p>
+</blockquote>
+<p>and
+
+</p>
+<blockquote>
+<p>Not only is email a successful decentralised system, it&#39;s the logical infrastructure for a decentralised social network. In Facebook terms, your &quot;feed&quot; is just an inbox with a smart filter and nice presentation, and your &quot;wall&quot; is just a mailing list to which all of your friends are subscribed.
+
+</p>
+</blockquote>
+<h4>Current distrubution techniques</h4>
+<p><a href="https://tent.io/about">Tent.io</a> is my favorite approach so far. Starting with a rock solid protocol they have started building server implementations using Ruby. But the first few comments of their about page alude to the problem of distrubution to non tech saavy users.
+
+</p>
+<blockquote>
+<p>Tent allows every user to run their own server, but like email and the web, most users will use a hosting service to handle it.
+  Users who want to run their own server should look at tentd, the current reference server implementation.
+  Alternatively, Tent.is offers one-click Tent hosting.
+
+</p>
+</blockquote>
+<p>This is ideally all that should be required, but understandably does not seem like the impetus that such a bold movement needs.
+
+</p>
+<h4>Using browser extensions for distrubution</h4>
+<p>The browser has shown to become a powerful player in app distribution with the Chrome webstore, Firefox Addons and the App Store.
+
+</p>
+<p>So what if we could package DSNs servers in browser extensions themselves.
+
+</p>
+<p>Users could then 
+
+</p>
+<ul class="square">
+  <li>Easily one click install, cross platform</li>
+  <li>Automatically sync their extensions across computers</li>
+  <li>Find DSNs through exploring app stores</li>
+</ul>
+
+<p>Once installed, they could manage their own back ups or use services.
+
+</p>
+<h4>How could you run an entire server in a browser extension?</h4>
+<p>Fortunately there are small endaevours to run webservers inside of browser extensions.   <strong>Node.js</strong> makes a good fit because the binary is only ~6.5mb and can easily be included inside of an extension without concerns for bandwidth.
+
+</p>
+<p>The links below are people who have succesfully run node.js inside of the browser using different methods.
+
+</p>
+<ul class="square">
+  <li><a href="http://rawkes.com/articles/running-node.html">Embedding and running node.js within a firefox xul extension</a></li>
+  <li><a href="https://github.com/iceddev/node-chromify">node-chromify</a></li>
+  <li><a href="https://github.com/danielconnor/chrome-node">chrome-node</a></li>
+</ul>
+
+<h4>Conclusion</h4>
+<p>I hope to see current attempts such as tent.io port their servers to node.js.   At this point, there is no reason why you couldn&#39;t bundle the server inside an easy to install extension.   I would definitely then try out a distrubuted social network.
+
+</p>
+<p>Look forward to hearing from those interested!</p>
+
+
+              <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'thomasdavishome'; // required: replace example with your forum shortname
+            var disqus_identifier = 'posts/the-problem-with-distrubuted-social-networks.html';
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function() {
+                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+        
+
+    </div>
+       
+    
+  </div><!-- container -->
+
+<script src="//static.getclicky.com/js" type="text/javascript"></script>
+<script type="text/javascript">try{ clicky.init(100539872); }catch(e){}</script>
+<noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100539872ns.gif" /></p></noscript>
+<!-- End Document
+================================================== -->
+</body>
+</html>
