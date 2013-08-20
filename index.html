@@ -18,9 +18,7 @@
 
 	<!-- CSS
   ================================================== -->
-	<link rel="stylesheet" href="stylesheets/base.css">
 	<link rel="stylesheet" href="stylesheets/skeleton.css">
-	<link rel="stylesheet" href="stylesheets/layout.css">
 
 	<!--[if lt IE 9]>
 		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
@@ -30,6 +28,9 @@
 	================================================== -->
 	<link rel="shortcut icon" href="favicon.ico">
 
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.1/underscore-min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/datatables/1.9.3/jquery.dataTables.min.js"></script>
 </head>
 <body>
 
@@ -41,51 +42,126 @@
 	<!-- Delete everything in this .container and get started on your own site! -->
 
 	<div class="container">
-			<h1 class="remove-bottom" style="margin-top: 40px">Thomas Davis</h1>
-			<h5>thomasalwyndavis@gmail.com</h5>
-			<h5>VP of Technology - Earbits.com</h5>
-			<hr />
-			<div class="one-third column alpha">
-			<h3>About</h3>
-			<p><img src="https://secure.gravatar.com/avatar/cff733cf90823edd218a834980379c61?s=170" style="float:left; margin-right: 15px; padding:2px; border: 1px solid #ddd;" />Hey guys, I've been developing on the web for ~10 years.   I have delved into many areas but of recent decided on focusing on front end web development. I'm currently living in Brisbane, Australia
-			</p>
-			<p>I work heavily with</p>
-			<ul class="square">
-				<li>Javascript</li>
-				<li>RESTful API's</li>
-				<li>CSS/HTML</li>
-			</ul>
-			<p>Also check out my full <a href="https://docs.google.com/document/pub?id=1UBNEBABOoDHeSgHUny48rPjqdFp_Ko39Cue9EXtcDS8">resume</a> or get in contact on</p>
-			<ul class="square">
-				<li><a href="http://twitter.com/neutralthoughts">Twitter</a></li>
-				<li><a href="http://thomasdavis.github.com">Github</a></li>
-			</ul>
-		</div>
-		<div class="one-third column ">
-			<h3>Open Source</h3>
-			<p>Below are a few open source libraries I have created.</p>
-			<ul class="square">
-				<li><a href="http://cdnjs.com">cdnjs - the missing cdn</a>: cdnjs is a free community project which host many developer resources on a content distribution network</li>
-				<li><a href="http://backbonetutorials.com">backbone.js tutorials</a>: Starting in 2011, I started writing tutorials for backbone.js starting from beginners to complex examples.</li>
-				<li><a href="http://kaleistyleguide.com">kalei - living style guide</a>: Kalei style guide generates CSS documentation containing examples of your styles, much like Twitter Bootstrap.</li>
-				<li><a href="http://seo.apiengine.io">seo server </a>: A node.js module that runs up a server to redirect search engines to the full content of your Javascript applications.</li>
-				<p>I have many more open source projects which can be found on my <a href="http://thomasdavis.github.com">github page</a>.</p>
-			</ul>
-		</div>
-		<div class="one-third column">
-			<h3>Organizations</h3>
 
-			
-			<p><a href="http://apiengine.io">Api Engine</a> is a collaborative documentation platform for API's.   Aiming to build a community for API development, as GitHub did for Git.</p>
-		</div>
-				<div class="one-third column ">
-			<h3>Books</h3>
-			<p><a href="http://leanpub.com/backbonetutorials">Backbone Tutorials</a> is a free ebook dedicated to working with backbone.js.  <a href="http://leanpub.com/backbonetutorials"><img src="images/title_page.png" style="float: right; margin-left: 15px; margin-top: 15px;padding:2px; border: 1px solid #ddd;" /></a>	The book is an ongoing work and updates are pushed automatically to devices. The tutorials cover beginner, intermediate and advanced material.
+<div class="row" style="margin-top: 20px;">
+          <div class="col-lg-12" style="padding: 0px;">
+
+            <div class="bs-example">
+              <div class="navbar navbar-default">
+                <div class="container">
+                  <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Thomas Davis</a>
+                  </div>
+                  <div class="navbar-collapse collapse navbar-responsive-collapse">
+                
+                  </div><!-- /.nav-collapse -->
+                </div><!-- /.container -->
+              </div><!-- /.navbar -->
+
+
+          </div>
+        </div>
+
+
+
+<div class="row">
+          <div class="col-lg-8">        
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">About</h3>
+              </div>
+              <div class="panel-body">
+               <p><img src="https://secure.gravatar.com/avatar/cff733cf90823edd218a834980379c61?s=170" style="float:left; margin-right: 15px; padding:2px; border: 1px solid #ddd;" />Hey guys, I've been developing on the web for ~10 years.   I have delved into many areas but of recent decided on focusing on front end web development. I'm currently living in Brisbane, Australia
 			</p>
-		</div>
-		<div style="clear: both;"></div>
-		<div class="one-third column omega">
-			<h3>Philosophy</h3>
+			<p>I work heavily with Javascript, RESTful API's, CSS/HTML</p>
+			<p>Also check out my full <a href="https://docs.google.com/document/pub?id=1UBNEBABOoDHeSgHUny48rPjqdFp_Ko39Cue9EXtcDS8">resume</a> 
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="panel panel-success">
+              <div class="panel-heading">
+                <h3 class="panel-title">Contact</h3>
+              </div>
+              <div class="panel-body">
+              	<ul class="square">
+				<li><a href="http://twitter.com/neutralthoughts">Twitter</a></li>
+				<li><a href="http://github.com/thomasdavis">Github</a></li>
+				<li><a href="mailto:thomasalwyndavis@gmail.com">thomasalwyndaivs@gmail.com</a></li>
+			</ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+<div class="row">
+  <div class="col-lg-12">        
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">Top 20 Projects</h3>
+      </div>
+      <div class="panel-body">
+    <div class="my-repos"></div> 
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+
+
+<script type="text/template" id="repositories-table">
+  <hr />
+  <% if( typeof org !== 'undefined') { %>
+<img style="float:left; margin-right: 20px;height: 80px; width: 80px;" src="<%= org.avatar_url %>" class="img-polaroid"  />
+    <h2 style="line-height: 80px;"><a href="<%= org.url %>"><%= org.login %></a></h2>
+    <div style="clear: both;"></div>
+  <hr />
+
+
+  <% } %>
+  <table class="table libraries table-striped">
+    <thead>
+      <tr>
+        <th>Name</th><th>Language</th><th>Description</th><th>Forks</th><th>Watchers</th><th>Open Issues</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% _.each(repos, function(repo){ %>
+      <tr>
+        <td><a href="<%= repo.html_url %>"><%= repo.name %></a></td>
+        <td><%= repo.language %></td>
+        <td><%= repo.description.substr(0,50) %>...</td>
+        <td><%= repo.forks %></td>
+        <td><%= repo.watchers %></td>
+        <td><%= repo.open_issues %></td>
+
+      </tr>
+      <% }); %>
+    </tbody>
+  </table>
+
+</script>
+
+
+
+<div class="row">
+  <div class="col-lg-4">        
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">Philosophy</h3>
+      </div>
+      <div class="panel-body">
 			<p>My competing love in life is philosophy.  I currently am reading through the classics, not bounded by era or region. I'm always trying to expand my literary circles so please get in contact.</p>
 			<h4>Studies include</h4>
 			<ul class="square">
@@ -101,21 +177,50 @@
 				<li>Algorithms and programming theory</li>
 			</ul>
 			<p>The idea is that I'm writing a book with no title, yet.</p>
-			<p><i>"The value of life lies not in the length of days, but in the use we make of them... Whether you find satisfaction in life depends not on your tale of years, but on your will."</i> - Michel de Montaigne </p>
-		</div>
-		<div class="one-third column">
-			<h3>Posts</h3>
-
-			<a href="http://thomasdav.is/posts/the-problem-with-distributed-social-networks.html">The problem with distributed social networks</a>
-		</div>
-		<div class="one-third column omega">
-			<h3>Books I've read</h3>
-			<ul>
+	
+      </div>
+    </div>
+    		<blockquote>
+              <p>The value of life lies not in the length of days, but in the use we make of them... Whether you find satisfaction in life depends not on your tale of years, but on your will.</p>
+              <small>Michel de Montaigne</small>
+            </blockquote>
+  </div>
+  <div class="col-lg-8">        
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">Books I've read</h3>
+      </div>
+      <div class="panel-body">
+     <ul>
 				<li><a href="https://www.facebook.com/pages/History-of-Chinese-Philosophy-Volume-1-The-P…od-of-the-Philosophers-from-the-Beginnings-to-Circa-100-BC/130030407162838">History of Chinese Philosophy, Volume 1: The Period of the Philosophers (from the Beginnings to Circa 100 B.C.)</a></li><li><a href="https://www.facebook.com/pages/I-Drink-Therefore-I-Am-A-Philosophers-Guide-to-Wine/472508982813737">I Drink Therefore I Am: A Philosopher's Guide to Wine</a></li><li><a href="https://www.facebook.com/pages/Second-Manifesto-for-Philosophy/192113480934213">Second Manifesto for Philosophy</a></li><li><a href="https://www.facebook.com/pages/The-Meditations-of-Marcus-Aurelius/108235572541259">The Meditations of Marcus Aurelius</a></li><li><a href="https://www.facebook.com/pages/Ethics-An-Essay-on-the-Understanding-of-Evil/324226514346262">Ethics: An Essay on the Understanding of Evil</a></li><li><a href="https://www.facebook.com/pages/Hesiods-Works-and-days/181655755310148">Hesiod's Works and days</a></li><li><a href="https://www.facebook.com/pages/Siddhartha/109414109085595">Siddhartha</a></li><li><a href="https://www.facebook.com/pages/Minima-moralia-reflections-on-a-damaged-life/388701904557029">Minima moralia : reflections on a damaged life</a></li><li><a href="https://www.facebook.com/pages/Paul-Verlaine-Selected-Poems/318889824882679">Paul Verlaine Selected Poems</a></li><li><a href="https://www.facebook.com/pages/Tao-Te-Ching/109477525745546">Tao Te Ching</a></li><li><a href="https://www.facebook.com/pages/The-G%C4%81th%C4%81s-of-Zarathustra/469002063162887">The Gāthās of Zarathustra</a></li><li><a href="https://www.facebook.com/pages/The-Parallax-View/151036198380981">The Parallax View</a></li><li><a href="https://www.facebook.com/pages/Reading-Greek-Text-and-Vocabulary/359392774159485">Reading Greek: Text and Vocabulary</a></li><li><a href="https://www.facebook.com/pages/Integrated-Chinese-Workbook-Level-1-Part-1-Simplified-Characters/125789900922898">Integrated Chinese: Workbook Level 1, Part 1: Simplified Characters</a></li><li><a href="https://www.facebook.com/pages/The-Analects-of-Confucius/107822939251487">The Analects of Confucius</a></li><li><a href="https://www.facebook.com/pages/Nietzsche-and-the-Vicious-Circle/119936784844448">Nietzsche and the Vicious Circle</a></li><li><a href="https://www.facebook.com/pages/Manfred/212118572258624">Manfred</a></li><li><a href="https://www.facebook.com/pages/On-Nietzsche/215027431968122">On Nietzsche</a></li><li><a href="https://www.facebook.com/pages/Human-All-Too-Human/108045649217289">Human, All Too Human</a></li><li><a href="https://www.facebook.com/pages/The-Birth-of-Tragedy/104098459625218">The Birth of Tragedy</a></li><li><a href="https://www.facebook.com/pages/Twilight-of-the-Idols/108015562553864">Twilight of the Idols</a></li><li><a href="https://www.facebook.com/pages/Ecce-homo/153443224803421">Ecce homo</a></li><li><a href="https://www.facebook.com/pages/On-the-Genealogy-of-Morality/106139676084060">On the Genealogy of Morality</a></li><li><a href="https://www.facebook.com/pages/The-Antichrist/108048089215679">The Antichrist</a></li><li><a href="https://www.facebook.com/pages/The-New-York-poets-Frank-OHara-John-Ashbery-Kenneth-Koch-James-Schuyler-an-anthology/193140060827338">The New York poets : Frank O'Hara, John Ashbery, Kenneth Koch, James Schuyler : an anthology</a></li><li><a href="https://www.facebook.com/pages/Selected-Poems/453359224717629">Selected Poems</a></li><li><a href="https://www.facebook.com/pages/The-Epic-of-Gilgamesh-Book-1-in-the-Republic-Series/144937888994125">The Epic of Gilgamesh: Book 1 in the Republic Series</a></li><li><a href="https://www.facebook.com/pages/Langston-Hughes/119813618190959">Langston Hughes</a></li><li><a href="https://www.facebook.com/pages/The-Complete-Poems-of-Hart-Crane/200870583384601">The Complete Poems of Hart Crane</a></li><li><a href="https://www.facebook.com/pages/Artaud-Anthology/472660539458803">Artaud Anthology</a></li><li><a href="https://www.facebook.com/pages/The-collected-poems-of-DH-Lawrence/576774635682552">The collected poems of D.H. Lawrence</a></li><li><a href="https://www.facebook.com/pages/Melmoth-the-Wanderer/103134173060105">Melmoth the Wanderer</a></li><li><a href="https://www.facebook.com/pages/Les-Chants-de-Maldoror/112295035448970">Les Chants de Maldoror</a></li><li><a href="https://www.facebook.com/pages/Shakespeares-sonnets/104074849628120">Shakespeare's sonnets</a></li><li><a href="https://www.facebook.com/pages/Goethes-Faust/104144026287455">Goethe's Faust</a></li><li><a href="https://www.facebook.com/pages/Hyperion-H%C3%B6lderlin-novel/112034892141050">Hyperion (Hölderlin novel)</a></li><li><a href="https://www.facebook.com/pages/Emerson/115092645334438">Emerson</a></li><li><a href="https://www.facebook.com/pages/A-History-of-My-Times/516791368342963">A History of My Times</a></li><li><a href="https://www.facebook.com/pages/History-of-the-Peloponnesian-War/112505238763273">History of the Peloponnesian War</a></li><li><a href="https://www.facebook.com/pages/The-Trial-and-Death-of-Socrates/156880077794326">The Trial and Death of Socrates</a></li><li><a href="https://www.facebook.com/pages/Lives-of-eminent-philosophers/103574573146270">Lives of eminent philosophers</a></li><li><a href="https://www.facebook.com/pages/Beyond-Good-and-Evil/105450189488458">Beyond Good and Evil</a></li><li><a href="https://www.facebook.com/pages/The-Communist-Manifesto/108719962485507">The Communist Manifesto</a></li><li><a href="https://www.facebook.com/pages/The-Upanishads/275785495882805">The Upanishads</a></li><li><a href="https://www.facebook.com/pages/Das-Kapital/105931019437213">Das Kapital</a></li><li><a href="https://www.facebook.com/pages/Ethics-book/104061056296306">Ethics (book)</a></li><li><a href="https://www.facebook.com/pages/Nietzsche-and-Philosophy/103982469639380">Nietzsche and Philosophy</a></li><li><a href="https://www.facebook.com/pages/Essays-Montaigne/112521955425707">Essays (Montaigne)</a></li><li><a href="https://www.facebook.com/pages/Quran/108636229167153">Quran</a></li><li><a href="https://www.facebook.com/pages/Holy-Bible-King-James-version/399031583517056">Holy Bible, King James version</a></li><li><a href="https://www.facebook.com/pages/The-Book-of-the-Courtier/108488649175592">The Book of the Courtier</a></li><li><a href="https://www.facebook.com/pages/The-Gay-Science/105701329464862">The Gay Science</a></li><li><a href="https://www.facebook.com/pages/The-Will-to-Power/108941359125278">The Will to Power</a></li><li><a href="https://www.facebook.com/pages/Thus-Spoke-Zarathustra/108126762540745">Thus Spoke Zarathustra</a></li>
 			</ul>
-		</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
 	</div><!-- container -->
 
+<script>
+
+var displayUserRepos = function () {
+
+  $.ajax('http://d2a0f5wdso4x2s.cloudfront.net/?username=thomasdavis' , {
+    dataType: "json",
+    success: function (repos) {
+    	var sortedrepos = _.sortBy(repos.repos, function(repo){ return -repo.watchers; });
+    	sortedrepos = sortedrepos.splice(0,20);
+      $('.my-repos').html(_.template($('#repositories-table').html(), {repos: sortedrepos}));
+    }
+  });
+
+};
+      displayUserRepos();
+
+</script>
 <script src="//static.getclicky.com/js" type="text/javascript"></script>
 <script type="text/javascript">try{ clicky.init(100539872); }catch(e){}</script>
 <noscript><p><img alt="Clicky" width="1" height="1" src="//in.getclicky.com/100539872ns.gif" /></p></noscript>
