@@ -104,7 +104,22 @@
 
 
 <div class="row">
-  <div class="col-lg-12">        
+<div class="col-lg-4">        
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">Open Source</h3>
+      </div>
+      <div class="panel-body">
+        <p>Over the years I have had the pleasure and the privlege of using many open source libraries to accomplish things I've wanted to do. When writing code now I do not hesitate to make it readily available for other people as to continue the legacy of those before me who have paved the way through their dedication and generosity. </p>
+      </div>
+      </div>
+               <blockquote>
+              <p>The writer must earn money in order to be able to live and to write, but he must by no means live and write for the purpose of making money.</p>
+ 
+              <small>Karl Marx</small>
+            </blockquote>
+</div>
+  <div class="col-lg-8">        
     <div class="panel panel-info">
       <div class="panel-heading">
         <h3 class="panel-title">Top 20 Projects</h3>
@@ -121,19 +136,10 @@
 
 
 <script type="text/template" id="repositories-table">
-  <hr />
-  <% if( typeof org !== 'undefined') { %>
-<img style="float:left; margin-right: 20px;height: 80px; width: 80px;" src="<%= org.avatar_url %>" class="img-polaroid"  />
-    <h2 style="line-height: 80px;"><a href="<%= org.url %>"><%= org.login %></a></h2>
-    <div style="clear: both;"></div>
-  <hr />
-
-
-  <% } %>
   <table class="table libraries table-striped">
     <thead>
       <tr>
-        <th>Name</th><th>Language</th><th>Description</th><th>Forks</th><th>Watchers</th><th>Open Issues</th>
+        <th>Name</th><th>Language</th><th>Forks</th><th>Watchers</th><th>Open Issues</th>
       </tr>
     </thead>
     <tbody>
@@ -141,7 +147,6 @@
       <tr>
         <td><a href="<%= repo.html_url %>"><%= repo.name %></a></td>
         <td><%= repo.language %></td>
-        <td><%= repo.description.substr(0,50) %>...</td>
         <td><%= repo.forks %></td>
         <td><%= repo.watchers %></td>
         <td><%= repo.open_issues %></td>
@@ -154,7 +159,90 @@
 </script>
 
 
+<div class="row">
+         <div class="col-lg-4">        
+    <div class="panel panel-primary">
+      <div class="panel-heading">
+        <h3 class="panel-title">Hacktivism</h3>
+      </div>
+      <div class="panel-body">
+      <p>We need to show respect to those who have fought for rights in the past and confer the same rights plus more to future generations. </p>
+      <p>Recently I've been working with the <a href="http://taskforce.is">RRITF</a>(Rapid Response Internet Task Force) to raise awareness against government surveillance of its citizens.</p>
 
+      </div>
+      </div>
+              <blockquote>
+              <p>The price good men pay for indifference to public affairs is to be ruled by evil men.</p>
+              <small>Plato</small>
+            </blockquote>
+</div>
+
+
+          <div class="col-lg-8">        
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+                <h3 class="panel-title">Websites</h3>
+              </div>
+              <div class="panel-body">
+<div class="row">
+
+          <div class="col-lg-5">        
+
+                <a href="http://rally.stopwatching.us"><img src="images/stopwatchingus.png" /></a>
+                </div>
+          <div class="col-lg-7">        
+          <h4>Stop Watching Us - Washington DC Rally</h4>
+          <a href="http://rally.stopwatching.us">http://rally.stopwatching.us</a>
+          <br />
+          <br />
+          <p>On October 26th, the 12th anniversary of the signing of the US Patriot Act, we're taking the next step and holding the largest rally yet against NSA surveillance. </p>
+          </div></div>
+          <hr />
+<div class="row">
+
+          <div class="col-lg-5">        
+
+           <a href="http://archive.1984day.com"><img src="images/1984day.png" /></a>
+                </div>
+          <div class="col-lg-7">        
+
+          <h4>1984Day.com - Rally for Privacy on Sunday, 8/4</h4>
+          <a href="http://archive.1984day.com">http://archive.1984day.com</a>
+          <br />
+          <br />
+          <p>This Sunday – 8/4 – Rally Against Unconstitutional Surveillance
+
+Join thousands of participants in 1984 Day rallies around the country</p>
+          </div></div>
+
+          <hr />
+
+<div class="row">
+
+          <div class="col-lg-5">        
+
+                <a href="http://defundthensa.com"><img src="images/defundthensa.png" /></a>
+                </div>
+          <div class="col-lg-7">        
+       
+          <h4>NSA surveillance program nearly defunded by the Amash amendment</h4>
+          <a href="http://defundthensa.com">http://defundthensa.com</a>
+          <br />
+          <br />
+          <p>This past July a critical vote nearly passed in Congress that could have defunded some of the NSA's surveillance program.</p>
+
+          </div></div>
+<div style="clear:both;"></div>
+
+
+
+               
+              </div>
+            </div>
+          </div>
+ 
+
+<div style="clear:both;"></div>
 <div class="row">
   <div class="col-lg-4">        
     <div class="panel panel-info">
