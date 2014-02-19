@@ -33,7 +33,6 @@
 
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.4.1/underscore-min.js"></script>
-    <script src="//cdnjs.cloudflare.com/ajax/libs/datatables/1.9.3/jquery.dataTables.min.js"></script>
 </head>
 
 <body>
@@ -120,20 +119,28 @@
 
 
 
-            <script type="text/template" id="repositories-table">
-            < table class = "table libraries table-striped" > < thead > < tr > < th > Name < /th><th>Language</th > < th > Forks < /th><th>Watchers</th > < th > Open Issues < /th>
-      </tr > < /thead>
+<script type="text/template" id="repositories-table">
+  <table class="table libraries table-striped">
+    <thead>
+      <tr>
+        <th>Name</th><th>Language</th><th>Forks</th><th>Watchers</th><th>Open Issues</th>
+      </tr>
+    </thead>
     <tbody>
       <% _.each(repos, function(repo){ %>
       <tr>
-        <td><a href="<%= repo.html_url %>"><%= repo.name %></a > < /td>
-        <td><%= repo.language %></td > < td > <%= repo.forks %> < /td>
-        <td><%= repo.watchers %></td > < td > <%= repo.open_issues %> < /td>
+        <td><a href="<%= repo.html_url %>"><%= repo.name %></a></td>
+        <td><%= repo.language %></td>
+        <td><%= repo.forks %></td>
+        <td><%= repo.watchers %></td>
+        <td><%= repo.open_issues %></td>
 
-      </tr > <%
-            }); %> < /tbody>
-  </table >
-            </script>
+      </tr>
+      <% }); %>
+    </tbody>
+  </table>
+
+</script>
 
 
             <div class="row">
@@ -411,6 +418,7 @@
                             return -repo.watchers;
                         });
                         sortedrepos = sortedrepos.splice(0, 20);
+                        console.log(sortedrepos);
                         $('.my-repos').html(_.template($('#repositories-table').html(), {
                             repos: sortedrepos
                         }));
